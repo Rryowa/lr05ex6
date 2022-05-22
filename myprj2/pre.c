@@ -2,8 +2,6 @@
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
-#include "func.h"
-#include "func.c"
 
 int check(int a, int n);
 int ten(int a, int n, int len);
@@ -20,7 +18,7 @@ int main(){
 	int b = atoi(a);
 	int len = strlen(a)-1;
 	
-	if (check(b, n) == 1){
+	if (check(b, n)){
 		printf("Vse pravilno\n");
 		printf("%d\n", ten(b, n, len));
 	}
@@ -30,3 +28,23 @@ int main(){
 	return 0;
 }
 
+int check(int a, int n){
+	while (a > 0){
+		if (a % 10 >= n){
+			return 0;
+		}
+		a = a/10;
+		if (a <= 0){
+			return 1;
+		}
+	}
+}
+
+int ten(int a, int n, int len){
+	int z = 0;
+	for (int i = 0; i < len; i++){
+		z = z + (a % 10) * pow(n, i);
+		a = a / 10;
+	}
+	return z;
+}

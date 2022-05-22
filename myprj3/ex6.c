@@ -3,10 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "func.h"
-#include "func.c"
 
-int check(int a, int n);
-int ten(int a, int n, int len);
 
 int main(){
 	printf("chislo: \n");
@@ -20,7 +17,7 @@ int main(){
 	int b = atoi(a);
 	int len = strlen(a)-1;
 	
-	if (check(b, n) == 1){
+	if (check(b, n)){
 		printf("Vse pravilno\n");
 		printf("%d\n", ten(b, n, len));
 	}
