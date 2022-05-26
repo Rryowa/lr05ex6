@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <stdbool.h>
 #include "test.h"
 
-bool check(int a){
+int check(int a){
 	if (a > 0){
-		return true;
+		return 1;
 	}
 	else{
-		return false;
+		return 0;
 	}
 }

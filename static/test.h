@@ -1,1 +1,1 @@
-bool check(int a);
+int check(int a);
