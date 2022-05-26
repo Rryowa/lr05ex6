@@ -30,9 +30,6 @@ int main(){
 
 int check(int a, int n){
 	while (a > 0){
-		if (n == 10){
-			return 1;
-		}
 		if (a % 10 >= n){
 			return 0;
 		}
