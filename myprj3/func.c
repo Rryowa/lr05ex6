@@ -7,11 +7,11 @@
 bool check(int a, int n){
 	while (a > 0){
 		if (a % 10 >= n){
-			return true;
+			return false;
 		}
 		a = a/10;
 		if (a <= 0){
-			return false;
+			return true;
 		}
 	}
 }

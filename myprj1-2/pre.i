@@ -1,9 +1,9 @@
-# 0 "preproc.c"
+# 0 "pre.c"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "preproc.c"
+# 1 "pre.c"
 # 1 "/usr/include/stdio.h" 1 3 4
 # 27 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -730,7 +730,7 @@ extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
 # 896 "/usr/include/stdio.h" 3 4
 
-# 2 "preproc.c" 2
+# 2 "pre.c" 2
 # 1 "/usr/include/math.h" 1 3 4
 # 27 "/usr/include/math.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -1639,7 +1639,7 @@ enum
   };
 # 1400 "/usr/include/math.h" 3 4
 
-# 3 "preproc.c" 2
+# 3 "pre.c" 2
 # 1 "/usr/include/stdlib.h" 1 3 4
 # 25 "/usr/include/stdlib.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -2730,7 +2730,7 @@ extern int getloadavg (double __loadavg[], int __nelem)
 # 1021 "/usr/include/stdlib.h" 2 3 4
 # 1032 "/usr/include/stdlib.h" 3 4
 
-# 4 "preproc.c" 2
+# 4 "pre.c" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -3012,10 +3012,10 @@ extern char *stpncpy (char *__restrict __dest,
      __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__nonnull__ (1, 2)));
 # 523 "/usr/include/string.h" 3 4
 
-# 5 "preproc.c" 2
+# 5 "pre.c" 2
 
 
-# 6 "preproc.c"
+# 6 "pre.c"
 int check(int a, int n);
 int ten(int a, int n, int len);
 
@@ -3023,14 +3023,14 @@ int main(){
  printf("chislo: \n");
  char a[11];
  fgets(a, 11, 
-# 12 "preproc.c" 3 4
+# 12 "pre.c" 3 4
              stdin
-# 12 "preproc.c"
+# 12 "pre.c"
                   );
  fflush(
-# 13 "preproc.c" 3 4
+# 13 "pre.c" 3 4
        stdin
-# 13 "preproc.c"
+# 13 "pre.c"
             );
  printf("systema ischislenia: \n");
  int n;
