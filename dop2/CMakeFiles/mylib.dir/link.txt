@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/mylib.dir/pre.c.o -o mylib  -Wl,-Bstatic -lm -Wl,-Bdynamic 

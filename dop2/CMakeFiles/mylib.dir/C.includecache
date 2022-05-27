@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rryo/Desktop/VVPI/LR05/lr05ex6/dop2/pre.c
+stdio.h
+-
+math.h
+-
+stdlib.h
+-
+
