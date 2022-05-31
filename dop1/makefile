@@ -1,8 +1,13 @@
-mypr3: ex6.o func.o
-	gcc -o mypr3 ex6.o func.o -lm
-ex6.o: ex6.c
-	gcc -c ex6.c
-func.o: func.c func.h
-	gcc -c func.c func.h
+CC=gcc
+SOURCES=pre.c
+OBJECTS=$(SOURCES:.c=.o)
+LIBS=-lm
+EXECUTABLE=mypr3
+all:$(EXECUTABLE)
+$(EXECUTABLE):$(OBJECTS)
+$(CC) $(OBJECTS) -o $@
+$(OBJECTS): $(SOURCES)
+$(CC) -c $(SOURCES)
 clean:
-	rm *.o
+rm $(EXECUTABLE)
+rm *.o
