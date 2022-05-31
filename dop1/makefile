@@ -1,13 +1,15 @@
 CC=gcc
 SOURCES=pre.c
 OBJECTS=$(SOURCES:.c=.o)
-LIBS=-lm
+LIBS=-lmw
 EXECUTABLE=mypr3
-all:$(EXECUTABLE)
-$(EXECUTABLE):$(OBJECTS)
-$(CC) $(OBJECTS) -o $@
-$(OBJECTS): $(SOURCES)
-$(CC) -c $(SOURCES)
+$(OBJECTS):
+	$(SOURCES)
+$(EXECUTABLE):
+	$(CC) -c $(SOURCES)
+	$(CC) $(OBJECTS) -o $@
+all:
+	$(EXECUTABLE)
 clean:
-rm $(EXECUTABLE)
-rm *.o
+	rm $(EXECUTABLE)
+	rm *.o
