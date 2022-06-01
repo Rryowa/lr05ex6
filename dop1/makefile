@@ -1,13 +1,13 @@
 CC=gcc
-SOURCES=pre.c
+SOURCES=main.c func.c
 OBJECTS=$(SOURCES:.c=.o)
 LIBS=-lm
 EXECUTABLE=myprj
 
 all: $(EXECUTABLE)
-$(EXECUTABLE): $(OBJECTS)
-	$(CC) -o $(EXECUTABLE) $(OBJECTS) $(LIBS)
 $(OBJECTS): $(SOURCES)
 	$(CC) -c $(SOURCES)
+$(EXECUTABLE): $(OBJECTS)
+	$(CC) -o $(EXECUTABLE) $(OBJECTS) $(LIBS)
 clean:
 	rm *.o
